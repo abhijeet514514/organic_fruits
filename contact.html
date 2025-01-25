@@ -91,23 +91,29 @@
                     <div class="row">
                         <div class="col-lg-7 mb-5">
                             <div class="row g-3">
+                              
                                 <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="Your Name " required>
+                                    <input type="text" class="form-control" placeholder="Your Name " id="name">
+                                    <span id="t1"></span>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <input type="email" class="form-control" placeholder=" Your Email" required>
+                                    <input type="email" class="form-control" placeholder=" Your Email" id="email">
+                                    <span id="t2"></span>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="Your Address " required>
+                                    <input type="text" class="form-control" placeholder="Your Address " id="add">
+                                    <span id="t3"></span>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <input type="number" class="form-control" placeholder="Your number " required>
+                                    <input type="text" class="form-control" placeholder="Your number " id="no">
+                                    <span id="t4"></span>
                                 </div>
                                 <div class="col-12 mb-4">
-                                    <textarea name="" class="form-control">Your Message...</textarea>
+                                    <textarea name="" class="form-control" id="textArea">Your Message...</textarea>
+                                    <span id="t5"></span>
                                 </div>
                                 <div class="col-12 mb-4">
-                                    <button type="sumbit" class="btn main-btn">Send Message</button>
+                                    <button type="submit" class="btn main-btn" onclick="valid(event)">Send Message</button>
                                 </div>
 
 
@@ -140,6 +146,8 @@
             </div>
         </div>
       </section>
+
+      <script src="formvalid.js"></script>
 
 
 
